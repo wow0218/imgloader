@@ -1,16 +1,16 @@
-一个简单的图片资源加载器。
+# 一个简单的图片资源加载器。
 
-兼容性	：{ PC: [IE9+,Chrome,FireFox] , Mobile: [] }
+# 兼容性
+	{ PC: [IE9+,Chrome,FireFox] , Mobile: [] }
 
-version:
+# version
 	"0.2.0":增加音频/视频文件的加载
 	"0.2.1":增加 CMD,AMD 引用
 	"0.2.2":修复 音频/视频文件 replay时 触发imgLoaded事件的BUG
 
-function ImgLoader(property,options){...}
+# function ImgLoader(property,options){...}
 
-参数说明：
-
+# 参数说明
 	@param {String | Array | JSON } property | arg0 
 		String : 准备加载的图片
 		Array  : 准备加载的图片资源队列
@@ -46,7 +46,7 @@ function ImgLoader(property,options){...}
 		assets	{Object}	加载资源列表(含加载状态。不论是否加载成功)
 		asset 	{Object}	加载成功 资源列表
 
-使用方式步骤
+# 使用方式步骤
 	1.设置资源列表：
 		var assets=[...]; //预加载图片(jpg,jpeg,gif,png)、音频(mp3,ogg,wav)、视频(mp4,webm,ogv)的列表数组
 	
@@ -89,7 +89,7 @@ function ImgLoader(property,options){...}
 			实例化的loader=new ImgLoader()对象，可以多次调用 loader.load(newAssets)方法，加载新的资源。
 			加载的新资源将统一追加到 loader.assets属性中。
 
-实际使用：
+# 实际使用
 	var assets=[
 		'css/bg1.mp3',
 		'images/slogan.png', 'images/bg2.jpg','images/bg3.png',
