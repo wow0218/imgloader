@@ -3,12 +3,14 @@
 兼容性	：{ PC: [IE9+,Chrome,FireFox] , Mobile: [] }
 
 version:
-	"0.2.0":增加音频/视频文件的加载,
+	"0.2.0":增加音频/视频文件的加载
 	"0.2.1":增加 CMD,AMD 引用
 	"0.2.2":修复 音频/视频文件 replay时 触发imgLoaded事件的BUG
 
 function ImgLoader(property,options){...}
+
 参数说明：
+
 	@param {String | Array | JSON } property | arg0 
 		String : 准备加载的图片
 		Array  : 准备加载的图片资源队列
